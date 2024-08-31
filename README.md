@@ -9,7 +9,7 @@ Please follow the links below for details of each experiment:
 
 Live demos are available at the following URLs:
 
-1. [Auth.js Demo](https://authjs-demo.vercel.app/)
+1. [Auth.js Demo](https://authjs-demo-gamma.vercel.app/)
 
 ## Prerequisites for development
 
