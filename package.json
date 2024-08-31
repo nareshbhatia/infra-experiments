@@ -1,6 +1,6 @@
 {
   "name": "infra-experiments",
-  "description": "My experiments with infrastructure components such as authentication, analytics,and databases",
+  "description": "My experiments with infrastructure components such as authentication, analytics, and databases",
   "version": "0.0.1",
   "private": true,
   "repository": {
