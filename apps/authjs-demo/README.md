@@ -1,4 +1,4 @@
-# Authjs Demo
+# Auth.js Demo
 
-This is a [Next.js](https://nextjs.org/) app bootstrapped with
-[Code Shaper](https://code-shaper.dev).
+You must copy the `.env.example` file to `.env.local` and set the correct
+environment variables before running the app.

@@ -1,6 +1,6 @@
 {
   "name": "authjs-demo",
-  "description": "Authjs Demo",
+  "description": "Auth.js Demo",
   "private": true,
   "version": "0.0.1",
   "scripts": {
@@ -8,6 +8,8 @@
     "build-storybook": "storybook build --webpack-stats-json",
     "ci-validate": "run-s build-storybook",
     "clean": "rimraf .turbo node_modules build coverage .next next-env.d.ts out src/generated storybook-static",
+    "db-generate": "drizzle-kit generate",
+    "db-migrate": "drizzle-kit migrate",
     "dev": "next dev --port 3000",
     "format": "prettier --list-different '**/*.{css,js,jsx,ts,tsx,json,md}'",
     "format:fix": "npm run format -- --write",
@@ -20,15 +22,30 @@
     "_codegen": "echo add any code generation steps here"
   },
   "dependencies": {
-    "next": "^14.2.5",
+    "@auth/drizzle-adapter": "^1.4.2",
+    "@neondatabase/serverless": "^0.9.4",
+    "@radix-ui/react-avatar": "^1.1.0",
+    "@radix-ui/react-dropdown-menu": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
+    "lucide-react": "^0.437.0",
+    "next": "^14.2.7",
+    "next-auth": "^5.0.0-beta.20",
+    "next-themes": "^0.3.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^1.6.1",
+    "@chromatic-com/storybook": "^1.8.0",
     "@code-shaper/jest-config": "^1.*",
-    "@dword-design/eslint-plugin-import-alias": "^5.0.1",
+    "@dword-design/eslint-plugin-import-alias": "^5.1.1",
     "@faker-js/faker": "^8.4.1",
+    "@next/env": "^14.2.7",
     "@storybook/addon-a11y": "^8.2.9",
     "@storybook/addon-docs": "^8.2.9",
     "@storybook/addon-essentials": "^8.2.9",
@@ -40,32 +57,27 @@
     "@storybook/test": "^8.2.9",
     "@storybook/theming": "^8.2.9",
     "@testing-library/dom": "^9.3.4",
-    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^14.3.1",
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.12",
-    "@types/node": "^22.4.0",
-    "@types/react": "^18.3.3",
+    "@types/node": "^22.5.1",
+    "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
     "deepmerge": "^4.3.1",
+    "drizzle-kit": "^0.24.2",
     "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.5",
+    "eslint-config-next": "^14.2.7",
     "eslint-plugin-storybook": "^0.8.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "msw": "2.3.5",
     "postcss": "^8.4.41",
     "postcss-import": "^16.1.0",
     "storybook": "^8.2.9",
     "storybook-dark-mode": "^4.0.2",
     "tailwindcss": "^3.4.10",
-    "ts-jest": "^29.2.4",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.5.4"
-  },
-  "msw": {
-    "workerDirectory": [
-      "public"
-    ]
   }
 }

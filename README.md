@@ -1,8 +1,15 @@
 # Infra Experiments
 
-** Add a short description of Infra Experiments here. **
+My experiments with infrastructure components such as authentication, analytics,
+and databases.
 
-This repository was bootstrapped with [Code Shaper](https://code-shaper.dev).
+Please follow the links below for details of each experiment:
+
+1. [Auth.js Demo](apps/authjs-demo/)
+
+Live demos are available at the following URLs:
+
+1. [Auth.js Demo](https://authjs-demo.vercel.app/)
 
 ## Prerequisites for development
 
@@ -23,8 +30,7 @@ npm run storybook
 
 Open browser windows at the following URLs to see the respective apps:
 
-1. http://localhost:3000/: Infra Experiments
-2. http://localhost:6006/: Storybook
+1. http://localhost:3000/: Auth.js Demo
 
 > Note: Do not run `npm install` or `npm ci` in any of the subdirectories. It
 > will break the build. There should be only one `package-lock.json` file in the

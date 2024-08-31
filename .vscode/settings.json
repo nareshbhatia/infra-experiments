@@ -1,17 +1,22 @@
 {
   "cSpell.words": [
+    "authjs",
     "autodocs",
+    "camelcase",
     "clsx",
     "codegen",
     "commitlint",
     "copyfiles",
     "deepmerge",
     "dword",
+    "lucide",
     "manypkg",
     "nextjs",
+    "shadcn",
     "tailwindcss",
     "tsup",
-    "turborepo"
+    "turborepo",
+    "Watchlist"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
