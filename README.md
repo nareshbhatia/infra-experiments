@@ -6,10 +6,12 @@ and databases.
 Please follow the links below for details of each experiment:
 
 1. [Auth.js Demo](apps/authjs-demo/)
+2. [Vercel Flags Demo](apps/vercel-flags-demo/)
 
 Live demos are available at the following URLs:
 
 1. [Auth.js Demo](https://authjs-demo-gamma.vercel.app/)
+2. [Vercel Flags Demo](https://vercel-flags-demo.vercel.app/)
 
 ## Prerequisites for development
 
@@ -31,6 +33,7 @@ npm run storybook
 Open browser windows at the following URLs to see the respective apps:
 
 1. http://localhost:3000/: Auth.js Demo
+2. http://localhost:3001/: Vercel Flags Demo
 
 > Note: Do not run `npm install` or `npm ci` in any of the subdirectories. It
 > will break the build. There should be only one `package-lock.json` file in the

@@ -1,5 +1,6 @@
 import { AppHeader } from '@/components/AppHeader';
 import { AppProvider } from '@/providers';
+import { VercelToolbar } from '@vercel/toolbar/next';
 import type { Metadata } from 'next';
 import { unstable_noStore as noStore } from 'next/cache';
 import { Inter, Roboto_Mono as RobotoMono } from 'next/font/google';
@@ -30,6 +31,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   noStore();
 
+  const shouldInjectToolbar = process.env.NODE_ENV === 'development';
   const baseApiUrl = process.env.BASE_API_URL ?? '';
 
   return (
@@ -42,7 +44,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <AppProvider baseApiUrl={baseApiUrl}>
           <div className="relative flex min-h-screen flex-col">
             <AppHeader />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1">
+              {children}
+              {shouldInjectToolbar ? <VercelToolbar /> : undefined}
+            </main>
           </div>
         </AppProvider>
       </body>

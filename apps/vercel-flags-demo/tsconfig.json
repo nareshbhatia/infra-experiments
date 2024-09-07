@@ -25,6 +25,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "src/app/.well-known/vercel/flags/route.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
